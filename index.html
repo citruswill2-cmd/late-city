@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LATE CITY — first copy, then the edition</title>
+  <meta name="description" content="LATE CITY sets the first website for people who just decided to start a business, and runs a late-city edition that bills other live sites under one masthead." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: "#E8DFC8",
+            sheet: "#F3ECD8",
+            ink: "#12100C",
+            mute: "#6A6356",
+            rule: "#B9AE96",
+            live: "#4D8BFF",
+            heat: "#FF2B3A"
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "Impact", "sans-serif"],
+            serif: ["Libre Baskerville", "Georgia", "serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        repeating-linear-gradient(0deg, rgba(18,16,12,.04) 0 1px, transparent 1px 26px),
+        #E8DFC8;
+      color: #12100C;
+    }
+    .mast {
+      border-bottom: 8px double #12100C;
+      border-top: 2px solid #12100C;
+    }
+    .reveal { opacity: 0; transform: translateY(10px); }
+    .dot-live { width: 8px; height: 8px; border-radius: 999px; background: #4D8BFF; box-shadow: 0 0 0 3px rgba(77,139,255,.2); }
+    .dot-heat { width: 8px; height: 8px; border-radius: 999px; background: #FF2B3A; box-shadow: 0 0 0 3px rgba(255,43,58,.18); }
+    .dot-hold { width: 8px; height: 8px; border-radius: 999px; background: #6A6356; }
+  </style>
+</head>
+<body class="font-serif antialiased">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-sheet focus:px-3 focus:py-2" href="#edition">Skip to edition</a>
+
+  <header class="sticky top-0 z-40 bg-paper/92 backdrop-blur border-b-2 border-ink">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5">
+      <a href="#top" class="font-display text-3xl tracking-wide text-ink">LATE CITY</a>
+      <nav class="flex gap-5 font-mono text-[11px] uppercase tracking-[0.18em] text-mute">
+        <a class="hover:text-ink" href="#desks">Desks</a>
+        <a class="hover:text-ink" href="#edition">Edition</a>
+        <a class="text-heat hover:text-ink" href="#copy">File copy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-6xl px-4 pb-24">
+    <section class="mast reveal pt-8 pb-8">
+      <div class="flex flex-wrap items-baseline justify-between gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-mute">
+        <span class="text-live">Vol. 01 · Late city final</span>
+        <span>Sunday edition · young adults + adults</span>
+        <span>Chris · citruswill2@gmail.com</span>
+      </div>
+      <h1 class="mt-3 font-display text-[18vw] leading-[0.78] tracking-tight text-ink sm:text-8xl md:text-9xl">
+        LATE CITY<br /><span class="text-heat">FINAL.</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed md:text-xl">
+        You already said yes to the business. You do not have a page, or you have one and the room is quiet.
+        LATE CITY sets the first file with your name on it — then bills other live URLs in the same edition.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#copy" class="bg-heat px-5 py-3 font-display text-xl tracking-wide text-sheet hover:bg-ink">FILE THE PARAGRAPH</a>
+        <a href="#edition" class="border-2 border-ink px-5 py-3 font-display text-xl tracking-wide text-ink hover:border-live hover:text-live">OPEN THE EDITION</a>
+      </div>
+    </section>
+
+    <section id="desks" class="reveal grid gap-0 border-2 border-ink md:grid-cols-2 mt-10">
+      <article class="bg-sheet p-6 md:p-8 md:border-r-2 md:border-ink">
+        <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-heat">City desk</p>
+        <h2 class="mt-2 font-display text-5xl leading-none">FIRST COPY</h2>
+        <p class="mt-4 text-lg leading-relaxed">
+          Modern young adults and adults who want a shop, a set, a stall, a service — and do not know how to put it on a phone.
+          Name, offer, who it is for, one way in. You keep the HTML.
+        </p>
+        <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+          <li>— Tailwind, light anime.js, ~0.5s</li>
+          <li>— No CMS, no ads, no payments</li>
+          <li>— Drop on Vercel. Own the file.</li>
+        </ul>
+      </article>
+      <article class="bg-sheet p-6 md:p-8">
+        <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-live">Night desk</p>
+        <h2 class="mt-2 font-display text-5xl leading-none">THE EDITION</h2>
+        <p class="mt-4 text-lg leading-relaxed">
+          Sites that are already up but quiet get a column. Blue stamp is a live URL. Red is studio heat.
+          Gray waits in the tray until it has its own public address.
+        </p>
+        <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+          <li>— Iris Onyx keeps the Utah / lights-off cadence</li>
+          <li>— Dee’s lot sells without a cart</li>
+          <li>— Empty column is the next name</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="edition" class="reveal mt-12">
+      <div class="flex flex-wrap items-end justify-between gap-3 border-b-4 border-ink pb-3">
+        <div>
+          <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-mute">Classifieds · public proofs</p>
+          <h2 class="font-display text-6xl leading-none md:text-7xl">THE EDITION</h2>
+        </div>
+        <p class="max-w-xs font-mono text-[11px] uppercase tracking-[0.14em] text-mute">Blue live · red heat · gray tray</p>
+      </div>
+
+      <div class="grid border-2 border-t-0 border-ink sm:grid-cols-2 lg:grid-cols-3">
+        <a class="group bg-sheet p-5 border-b-2 border-ink lg:border-r-2 hover:bg-paper" href="https://iris0nyx.com/" target="_blank" rel="noopener">
+          <div class="flex items-center justify-between">
+            <span class="dot-live" title="live"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-live">01 · artist · live</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none group-hover:text-live">IRIS ONYX</h3>
+          <p class="mt-2 font-mono text-[11px] text-live">iris0nyx.com</p>
+          <p class="mt-3 leading-snug">Goth pop from Utah. Pop with teeth. Windows down. Lights off.</p>
+        </a>
+
+        <a class="group bg-sheet p-5 border-b-2 border-ink lg:border-r-2 hover:bg-paper" href="https://dnc-computerz.vercel.app/" target="_blank" rel="noopener">
+          <div class="flex items-center justify-between">
+            <span class="dot-live" title="live"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-live">02 · lot · live</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none group-hover:text-live">DNC COMPUTERZ</h3>
+          <p class="mt-2 font-mono text-[11px] text-live">dnc-computerz.vercel.app</p>
+          <p class="mt-3 leading-snug">Towers, parts, screens on shop tickets. A bench page for what is sitting there.</p>
+        </a>
+
+        <a class="group bg-sheet p-5 border-b-2 border-ink hover:bg-paper" href="https://sameweekhq.vercel.app/" target="_blank" rel="noopener">
+          <div class="flex items-center justify-between">
+            <span class="dot-heat" title="studio"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-heat">03 · studio · heat</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none group-hover:text-heat">REDLINE</h3>
+          <p class="mt-2 font-mono text-[11px] text-heat">sameweekhq.vercel.app</p>
+          <p class="mt-3 leading-snug">You describe the job. Chris builds the site. That domain currently serves REDLINE.</p>
+        </a>
+
+        <a class="group bg-sheet p-5 border-b-2 border-ink sm:border-r-2 hover:bg-paper" href="https://daytape.vercel.app/" target="_blank" rel="noopener">
+          <div class="flex items-center justify-between">
+            <span class="dot-live" title="live"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-live">04 · tape · live</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none group-hover:text-live">DAYTAPE</h3>
+          <p class="mt-2 font-mono text-[11px] text-live">daytape.vercel.app</p>
+          <p class="mt-3 leading-snug">A day’s tape without a platform tax. Phone-first, short, already up.</p>
+        </a>
+
+        <a class="group bg-sheet p-5 border-b-2 border-ink lg:border-r-2 hover:bg-paper" href="https://github.com/citruswill2-cmd/sameweek" target="_blank" rel="noopener">
+          <div class="flex items-center justify-between">
+            <span class="dot-hold" title="tray"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">05 · shop · tray</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none text-ink/70">SAMEWEEK</h3>
+          <p class="mt-2 font-mono text-[11px] text-mute">github.com/citruswill2-cmd/sameweek</p>
+          <p class="mt-3 leading-snug text-ink/70">Source is public. sameweek.vercel.app currently serves CAST — this column waits on its own project.</p>
+        </a>
+
+        <a class="group bg-sheet p-5 border-b-2 border-ink hover:bg-paper" href="https://github.com/citruswill2-cmd/laughline" target="_blank" rel="noopener">
+          <div class="flex items-center justify-between">
+            <span class="dot-hold" title="tray"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">06 · comedy · tray</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none text-ink/70">LAUGHLINE</h3>
+          <p class="mt-2 font-mono text-[11px] text-mute">github.com/citruswill2-cmd/laughline</p>
+          <p class="mt-3 leading-snug text-ink/70">Chris Williams comedy first-draft. laughline.vercel.app is still 404. File lives on GitHub.</p>
+        </a>
+
+        <a class="group bg-paper p-5 sm:col-span-2 lg:col-span-3 hover:bg-sheet" href="#copy">
+          <div class="flex items-center justify-between">
+            <span class="dot-heat" title="open"></span>
+            <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-heat">open column</span>
+          </div>
+          <h3 class="mt-4 font-display text-4xl leading-none group-hover:text-heat md:text-5xl">YOUR NAME IN THE FINAL</h3>
+          <p class="mt-3 max-w-2xl leading-snug">New business or a live site that needs traffic. Send the paragraph. If the URL works, it gets a column. If it doesn’t, it gets first copy.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="copy" class="reveal mt-12 border-2 border-ink bg-sheet p-6 md:p-10">
+      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-heat">Copy desk</p>
+      <h2 class="mt-2 font-display text-5xl leading-none md:text-7xl">SAY THE THING.</h2>
+      <p class="mt-4 max-w-xl text-lg leading-relaxed">
+        One box. No discovery call. Name, what you want the site to do, who it is for, budget if you have one, live URL if you already have one.
+      </p>
+      <form id="brief" class="mt-8 max-w-xl">
+        <label class="font-mono text-[11px] uppercase tracking-[0.18em] text-mute" for="para">The paragraph</label>
+        <textarea id="para" name="para" rows="7" required placeholder="Name. What it does. Who it’s for. Budget if you have one. Live URL if you want the edition." class="mt-2 w-full resize-y border-2 border-ink bg-paper px-4 py-3 text-ink outline-none focus:border-live"></textarea>
+        <button type="submit" class="mt-4 bg-ink px-6 py-3 font-display text-xl tracking-wide text-sheet hover:bg-heat">SEND TO CHRIS</button>
+        <p class="mt-3 font-mono text-[11px] text-mute">Opens mail to citruswill2@gmail.com with the paragraph prefilled.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t-2 border-ink">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 font-mono text-[11px] uppercase tracking-[0.16em] text-mute">
+      <span>LATE CITY · files you own</span>
+      <span>paper · #4D8BFF · #FF2B3A</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script>
+    (function () {
+      var nodes = document.querySelectorAll(".reveal");
+      if (window.anime) {
+        window.anime({
+          targets: nodes,
+          opacity: [0, 1],
+          translateY: [10, 0],
+          delay: window.anime.stagger(70),
+          duration: 360,
+          easing: "easeOutQuad"
+        });
+      } else {
+        nodes.forEach(function (n) {
+          n.style.opacity = "1";
+          n.style.transform = "none";
+        });
+      }
+      var form = document.getElementById("brief");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var text = (document.getElementById("para").value || "").trim();
+          var body = text || "Name.\nWhat I want the site to do.\nWho it is for.\nBudget if I have one.\nLive URL if I have one.";
+          var url =
+            "mailto:citruswill2@gmail.com" +
+            "?subject=" + encodeURIComponent("LATE CITY brief") +
+            "&body=" + encodeURIComponent(body);
+          window.location.href = url;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
